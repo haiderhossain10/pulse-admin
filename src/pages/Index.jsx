@@ -35,6 +35,9 @@ const Index = (props) => {
                     </div>
                 </div>
                 <div className="number-right-content">
+                    <div className="mobile-header">
+                        <Logo />
+                    </div>
                     <div className="lang-select">
                         <select>
                             <option value="">English</option>
@@ -114,9 +117,13 @@ const Index = (props) => {
                             fill="#61050A"
                         />
                     </svg>
+                    <img
+                        className="object-man"
+                        src={ImageMan}
+                        alt="Object Man"
+                    />
                 </div>
 
-                <img className="object-man" src={ImageMan} alt="Object Man" />
                 <Footer />
             </div>
         </>

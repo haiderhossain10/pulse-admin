@@ -1,0 +1,131 @@
+@media all and (max-width: 900px) {
+    body {
+        padding: 0;
+    }
+
+    /**
+    index page
+    */
+    .mobile-header {
+        display: flex;
+    }
+
+    .number-sidebar {
+        width: 100%;
+        order: 2;
+        padding-bottom: 10rem;
+
+        img {
+            width: 100%;
+        }
+
+        h2 {
+            font-size: 26px;
+            line-height: 32px;
+            padding: 0;
+            text-align: start;
+        }
+    }
+
+    .number-form {
+        width: 258px;
+        position: relative;
+        padding: 30px;
+        margin: 8rem auto;
+        bottom: unset;
+
+        h4 {
+            font-size: 20px;
+            padding-right: 0;
+        }
+
+        p {
+            padding: 10px 0;
+        }
+    }
+
+    .number-input {
+        flex-wrap: wrap;
+        padding-right: 0;
+
+        input {
+            height: 40px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        button {
+            height: 40px;
+        }
+    }
+
+    .object-box {
+        display: none;
+    }
+
+    .number-info {
+        position: relative;
+        left: unset;
+        top: unset;
+        width: 263.65px;
+        padding: 12px;
+        margin: 0 auto;
+
+        h2 {
+            font-size: 18px;
+        }
+
+        svg {
+            width: 40px;
+            bottom: -69px;
+            right: 39px;
+        }
+    }
+
+    .number-right-content {
+        position: relative;
+        padding-left: 0;
+        background-position: -8rem -1rem;
+        background-size: 130%;
+    }
+
+    .object-man {
+        height: 227.8px;
+        right: 0;
+        bottom: 0;
+    }
+
+    .number-logo {
+        display: none;
+    }
+
+    .number-btn {
+        button {
+
+            height: 41px;
+
+            img {
+                width: 90%;
+            }
+        }
+    }
+
+    /**
+    footer section 
+    */
+    .footer-box {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &>p {
+            order: 2;
+        }
+    }
+
+    .footer-right {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+
+}

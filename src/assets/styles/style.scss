@@ -56,6 +56,19 @@ index page
     position: relative;
 }
 
+.mobile-header {
+    background-color: $red-color;
+    display: flex;
+    justify-content: center;
+    height: 64.91px;
+    align-items: center;
+    display: none;
+
+    svg {
+        width: 76.38px;
+    }
+}
+
 .number-sidebar {
     width: 574px;
     background-color: $red-color;
@@ -217,7 +230,7 @@ index page
 }
 
 /**
-footer part
+footer section
 */
 
 .footer-box {
