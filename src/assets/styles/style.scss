@@ -1,0 +1,245 @@
+// local fonts
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url('./../fonts/Gilroy-Regular.ttf') format('woff');
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('./../fonts/Gilroy-Medium.ttf') format('woff');
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('./../fonts/Gilroy-Bold.ttf') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+    font-family: 'Gilroy-Regular';
+    position: relative;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+/**
+colors variables
+*/
+$red-color: #FF2431;
+$lavender-color: #FFF1F1;
+$black-color: #000000;
+$dark-color: #1C2021;
+$white-color: #ffffff;
+
+/**
+index page
+*/
+
+.number-box {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $lavender-color;
+    position: relative;
+}
+
+.number-sidebar {
+    width: 574px;
+    background-color: $red-color;
+    padding: 30px 30px 110px 30px;
+    position: relative;
+    z-index: 9;
+
+    h2 {
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        color: $dark-color;
+        font-family: 'Gilroy-Bold';
+        padding: 0 3rem;
+
+        span {
+            color: $white-color;
+        }
+    }
+}
+
+.number-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    gap: 1rem;
+
+    button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        height: 52.93px;
+        background-color: $black-color;
+    }
+}
+
+.number-right-content {
+    flex-grow: 1;
+    background-image: url('./../img/number-tower.png');
+    background-repeat: no-repeat;
+    background-position: 1rem 2rem;
+    background-size: 100%;
+    padding-left: 55px;
+    position: relative;
+}
+
+.lang-select {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+
+    select {
+        border: none;
+        background: none;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.number-form {
+    width: 525px;
+    background-color: $white-color;
+    padding: 54px;
+    position: absolute;
+    bottom: 120px;
+    z-index: 9;
+
+    h4 {
+        font-size: 26px;
+        line-height: 32px;
+        font-family: 'Gilroy-Medium';
+        color: $black-color;
+        padding-right: 2rem;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 17px;
+        color: $black-color;
+        padding: 12px 2rem 12px 0;
+    }
+}
+
+.number-input {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2rem;
+
+    input {
+        height: 51px;
+        border: none;
+        width: 267px;
+        padding: 0 1rem;
+        background-color: $lavender-color;
+
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            color: #D2D2D2;
+        }
+    }
+
+    button {
+        height: 51px;
+        font-size: 16px;
+        line-height: 19px;
+        font-family: 'Gilroy-Medium';
+        background-color: $black-color;
+        color: $white-color;
+        cursor: pointer;
+        padding: 0 1rem;
+        border: none;
+        transition: all .3s;
+
+        &:hover {
+            background-color: $dark-color;
+        }
+    }
+}
+
+.number-info {
+    width: 400.65px;
+    background-color: $black-color;
+    padding: 40px;
+    position: absolute;
+    left: -90px;
+    top: 127px;
+    z-index: 99;
+
+    svg {
+        position: absolute;
+        bottom: -78px;
+        right: 74px;
+    }
+
+    h2 {
+        color: $white-color;
+        font-family: 'Gilroy-Bold';
+        font-size: 26px;
+        line-height: 32px;
+    }
+}
+
+.object-man {
+    position: absolute;
+    bottom: 0;
+    right: -24px;
+}
+
+.object-box {
+    position: absolute;
+    bottom: 0;
+    left: -50px;
+}
+
+/**
+footer part
+*/
+
+.footer-box {
+    background-color: $black-color;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+
+    p {
+        font-size: 16px;
+        line-height: 24px;
+        color: $white-color;
+    }
+}
+
+.footer-right {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
