@@ -85,8 +85,12 @@
     .number-right-content {
         position: relative;
         padding-left: 0;
-        background-position: -8rem -1rem;
+        background-position: -8rem 6rem;
         background-size: 130%;
+    }
+
+    .lang-select {
+        margin-bottom: 2rem;
     }
 
     .object-man {
