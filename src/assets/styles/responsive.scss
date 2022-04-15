@@ -1,6 +1,8 @@
 @media all and (max-width: 900px) {
-    body {
-        padding: 0;
+
+    body,
+    html {
+        overflow-y: scroll;
     }
 
     /**

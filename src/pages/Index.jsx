@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import { ReactComponent as Logo } from "./../assets/img/logo.svg";
 import NumberMobile from "./../assets/img/number-mobile.png";
-import GoogleBtn from "./../assets/img/google-btn.png";
-import AppleBtn from "./../assets/img/apple-btn.png";
 import ImageMan from "./../assets/img/number-man.png";
 import { Link } from "react-router-dom";
-import Footer from "../components/footer/Footer";
+import { ReactComponent as Apple } from "./../assets/img/apple-btn.svg";
+import { ReactComponent as Google } from "./../assets/img/google-btn.svg";
+import FooterLogo from "./../assets/img/footer-logo.png";
 
 const Index = (props) => {
     useEffect(() => {
@@ -20,17 +20,19 @@ const Index = (props) => {
                             <Logo />
                         </Link>
                     </div>
-                    <img src={NumberMobile} alt="" />
+                    <div className="number-hand-img">
+                        <img src={NumberMobile} alt="" />
+                    </div>
                     <h2>
-                        Download <span>Pluse</span> on the android or ios app
-                        for a<span> Better Experince</span>
+                        Install <span>PulseWiFi</span> app on the Android or iOS
+                        for <span> Seamless WiFi Experience</span>
                     </h2>
                     <div className="number-btn">
                         <button>
-                            <img src={GoogleBtn} alt="Google Button" />
+                            <Apple />
                         </button>
                         <button>
-                            <img src={AppleBtn} alt="Apple Button" />
+                            <Google />
                         </button>
                     </div>
                 </div>
@@ -66,10 +68,19 @@ const Index = (props) => {
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit. Donec at risus maximus,
-                                suscipit lorem quis,{" "}
+                                suscipit lorem quis,
                             </p>
                             <div className="number-input">
-                                <input type="number" placeholder="+91" />
+                                <input
+                                    type="number"
+                                    placeholder="+91"
+                                    minLength="1"
+                                    maxLength="3"
+                                />
+                                <input
+                                    type="number"
+                                    placeholder="9933-711-955"
+                                />
                                 <button type="submit">Continue</button>
                             </div>
                         </form>
@@ -77,54 +88,66 @@ const Index = (props) => {
                     <svg
                         className="object-box"
                         width="154"
-                        height="197"
-                        viewBox="0 0 154 197"
+                        height="196"
+                        viewBox="0 0 154 196"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                     >
-                        <rect width="84.8571" height="196.429" fill="#FFEAEB" />
+                        <rect width="84.8571" height="196" fill="#FFEAEB" />
                         <path
-                            d="M66 196.429V105.286L99 146.5V196.429H66Z"
+                            d="M66 196.001V105.057L99 146.181V196.001H66Z"
                             fill="#EC8E92"
                         />
                         <path
-                            d="M154 145.963L99.4545 146.143L66 105.286H117.818L154 145.963Z"
+                            d="M154 145.645L99.4545 145.825L66 105.057H117.818L154 145.645Z"
                             fill="#FFDADC"
                         />
                         <path
-                            d="M99 146.325L154 146.143V196.428H99V146.325Z"
+                            d="M99 146.005L154 145.823V195.999H99V146.005Z"
                             fill="#BC3C44"
                         />
                         <rect
                             x="15.7148"
-                            y="105.286"
+                            y="105.057"
                             width="50.2857"
-                            height="91.1429"
+                            height="90.944"
                             fill="#BC3C44"
                         />
                         <rect
                             x="28.2852"
-                            y="51.8574"
+                            y="51.7441"
                             width="7.85714"
-                            height="72.2857"
+                            height="72.128"
                             fill="white"
                         />
                         <rect
                             x="36.1445"
-                            y="51.8574"
+                            y="51.7441"
                             width="4.71429"
-                            height="72.2857"
+                            height="72.128"
                             fill="#61050A"
                         />
                     </svg>
+                    <div className="footer-content">
+                        <div className="footer-content-info">
+                            <ul>
+                                <li>Terms and Conditions</li>
+                                <li>Privacy Policy</li>
+                            </ul>
+                            <p>
+                                © 2022 Simplifon Technologies Private Limited -
+                                All Rights Reserved
+                            </p>
+                        </div>
+                        <img src={FooterLogo} alt="Footer Logo" />
+                    </div>
+
                     <img
                         className="object-man"
                         src={ImageMan}
                         alt="Object Man"
                     />
                 </div>
-
-                <Footer />
             </div>
         </>
     );
