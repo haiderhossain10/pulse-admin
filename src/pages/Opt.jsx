@@ -44,6 +44,13 @@ const Opt = (props) => {
                     <div className="mobile-header">
                         <Logo />
                     </div>
+                    <div className="lang-select">
+                        <select>
+                            <option value="">English</option>
+                            <option value="">Hindi</option>
+                            <option value="">Bangla</option>
+                        </select>
+                    </div>
                     <div className="opt-verification">
                         <h4>OTP Verification</h4>
                         <p>
