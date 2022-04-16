@@ -1,0 +1,41 @@
+[33mcommit 50d7d0c6f77819b1b7ce33544b537ceb076be938[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Md Haider Hossain <mdhaiderhossain10@gmail.com>
+Date:   Sat Apr 16 19:12:03 2022 +0600
+
+    50% completed
+
+[33mcommit dce3580f60e64a5af53f9f4355fbfbad77603262[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Md Haider Hossain <mdhaiderhossain10@gmail.com>
+Date:   Fri Apr 15 16:29:17 2022 +0600
+
+    profile page
+
+[33mcommit 19d037d4f497569a4ec004321e2320352123fdd3[m
+Author: Md Haider Hossain <mdhaiderhossain10@gmail.com>
+Date:   Fri Apr 15 12:16:50 2022 +0600
+
+    desktop design updated
+
+[33mcommit ff9c11ed598143eb20b3d34003dc6692136727bd[m
+Author: Md Haider Hossain <mdhaiderhossain10@gmail.com>
+Date:   Thu Apr 14 11:06:48 2022 +0600
+
+    index page resposnive fixed v0.1
+
+[33mcommit dbfce276ecfde108df787c92304ad6dde1859209[m
+Author: Md Haider Hossain <mdhaiderhossain10@gmail.com>
+Date:   Thu Apr 14 11:03:23 2022 +0600
+
+    index page responsive
+
+[33mcommit 8f611e02f5cdae30fc324f41ebfb90fec5dca4ab[m
+Author: Md Haider Hossain <mdhaiderhossain10@gmail.com>
+Date:   Thu Apr 14 09:40:18 2022 +0600
+
+    index page
+
+[33mcommit 0fcba2dff0759a8d1093c27609781fa44ac44309[m
+Author: Md Haider Hossain <mdhaiderhossain10@gmail.com>
+Date:   Wed Apr 13 00:39:19 2022 +0600
+
+    Initialize project using Create React App

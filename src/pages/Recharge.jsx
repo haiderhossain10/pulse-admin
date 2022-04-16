@@ -3,6 +3,7 @@ import { ReactComponent as Logo } from "./../assets/img/logo.svg";
 import { Link } from "react-router-dom";
 import FooterLogo from "./../assets/img/footer-logo.png";
 import ProfileBg from "./../assets/img/profile-bg.png";
+import Package from "../components/package/Package";
 
 const Recharge = (props) => {
     useEffect(() => {
@@ -53,6 +54,12 @@ const Recharge = (props) => {
                                 Hotstar subscription, unlimited calls, 3GB/day +
                                 48GB Extra for 7 Days
                             </p>
+                        </div>
+
+                        <div className="package-box">
+                            <h4>Choose a Package</h4>
+                            <Package />
+                            <Package />
                         </div>
 
                         <div className="footer-content">
