@@ -825,3 +825,237 @@ recharge page
         padding: 10px;
     }
 }
+
+/**
+payment page
+*/
+
+.payment-box {
+    background-color: #FFF1F1;
+    height: 100vh;
+    background-image: url('./../img/payment-bg.png');
+    background-position-y: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.payment-content-box {
+    max-width: 1200px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.payment-option {
+    h2 {
+        font-size: 30px;
+        font-family: 'Gilroy-Bold';
+        color: $dark-color;
+        margin-bottom: 20px;
+    }
+}
+
+.payment-radio {
+    height: 12px;
+    width: 12px;
+    margin-right: 1rem;
+
+    span {
+        height: 12px;
+        width: 12px;
+        display: block;
+        border: 1px solid $red-color;
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: $white-color;
+    }
+
+    input {
+        display: none;
+    }
+
+    input:checked~span {
+        border-width: 4px;
+    }
+}
+
+.payment-bar {
+    display: flex;
+    align-items: center;
+    background-color: $white-color;
+    padding: 10px 18px;
+    border-radius: 8px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.payment-card {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+
+    img {
+        width: 130px;
+        padding-right: 0.6rem;
+    }
+
+    ul {
+        border-left: 1px solid #072654;
+        padding-left: 0.6rem;
+
+        li {
+            font-size: 14px;
+            font-weight: 600;
+            color: $dark-color;
+        }
+    }
+}
+
+.payment-card-option {
+    display: flex;
+    align-items: center;
+    grid-area: 8px;
+
+    img {
+        width: 36px;
+    }
+}
+
+.payment-info {
+    margin-left: auto;
+
+    >p {
+        &:first-of-type {
+            font-size: 20px;
+            color: $black-color;
+            font-family: 'Gilroy-Bold';
+            padding-bottom: 20px;
+        }
+
+        &:last-of-type {
+            font-size: 12px;
+            color: $black-color;
+            width: 338px;
+            text-align: center;
+        }
+    }
+
+    >h4 {
+        font-size: 16px;
+        color: $black-color;
+        font-family: 'Gilroy-Medium';
+        padding-bottom: 6px;
+        text-align: center;
+        width: 338px;
+        margin-top: 20px;
+    }
+}
+
+.payment-recharge-box {
+    background-color: $white-color;
+    width: 338px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.payment-charge-profile {
+    background-color: #FFF1F1;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    h4 {
+        font-size: 18px;
+        font-family: 'Gilroy-Medium';
+        color: $dark-color;
+    }
+
+    h6 {
+
+        font-size: 18px;
+        font-family: 'Gilroy-Bold';
+        color: $dark-color;
+    }
+
+    p {
+        font-size: 12px;
+        color: $red-color;
+    }
+}
+
+.payment-img {
+    background-color: $white-color;
+    height: 65px;
+    width: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.payment-table {
+    margin-top: 16px;
+
+    table {
+        width: 100%;
+    }
+
+    tr {
+
+        td {
+            width: 50%;
+            font-size: 14px;
+            font-family: 'Gilroy-Medium';
+            color: $dark-color;
+            padding: 6px 0;
+
+            &:first-of-type {
+                color: #B8B8C0;
+            }
+
+            &:last-of-type {
+                text-align: right;
+            }
+        }
+    }
+
+    button {
+        font-size: 16px;
+        font-family: 'Gilroy-Bold';
+        color: $white-color;
+        background-color: $black-color;
+        width: 100%;
+        height: 40px;
+        border: none;
+        cursor: pointer;
+        border-radius: 8px;
+        margin-top: 14px;
+        transition: all .3s;
+
+        &:hover {
+            background-color: $red-color;
+        }
+    }
+}
+
+.payment-dashed {
+    border-top: 1px dashed $black-color;
+    margin: 6px 0;
+}
+
+.footer-color-fix {
+    ul {
+        li {
+            color: $black-color;
+        }
+    }
+
+    p {
+        color: $black-color;
+    }
+
+    .footer-content-info {
+        border-right-color: $black-color;
+    }
+}

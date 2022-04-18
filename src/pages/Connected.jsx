@@ -6,7 +6,7 @@ import { ReactComponent as Google } from "./../assets/img/google-btn.svg";
 import ConnectTower from "./../assets/img/connect-tower.png";
 import ConnectLaptop from "./../assets/img/connect-laptop.png";
 import FooterLogo from "./../assets/img/footer-white-logo.png";
-import ConnectLine from "./../assets/img/connect-line.png";
+// import ConnectLine from "./../assets/img/connect-line.png";
 
 const Connected = (props) => {
     useEffect(() => {

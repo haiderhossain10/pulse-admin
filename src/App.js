@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Connected from "./pages/Connected";
 import Index from "./pages/Index";
 import Opt from "./pages/Opt";
+import Payment from "./pages/Payment";
 import ProfileSetup from "./pages/ProfileSetup";
 import Recharge from "./pages/Recharge";
 
@@ -35,6 +36,10 @@ const App = () => {
                     element={
                         <Recharge title="Puls Dashboard | Recharge Page" />
                     }
+                />
+                <Route
+                    path="/payment"
+                    element={<Payment title="Puls Dashboard | Recharge Page" />}
                 />
             </Routes>
         </>
